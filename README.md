@@ -53,7 +53,7 @@ I wrote a complete tutorial on SitePoint to cover this Gem's features in detail,
 Add the ratyrate gem into your Gemfile
 
 ```ruby
-gem 'ratyrate', :git => 'git://github.com/dboggs95/rails-5-ratyrate.git'
+gem 'ratyrate', :git => 'git://github.com/dboggs95/rails-5-ratyrate.git', :branch => 'patch-1'
 ```
 
 ### Generate
