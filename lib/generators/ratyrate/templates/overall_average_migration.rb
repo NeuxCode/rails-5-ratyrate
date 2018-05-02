@@ -1,5 +1,5 @@
 class CreateOverallAverages < ActiveRecord::Migration[5.1]
-  def self.change
+  def change
     create_table :overall_averages do |t|
       t.belongs_to :rateable, :polymorphic => true
       t.float :overall_avg, :null => false
