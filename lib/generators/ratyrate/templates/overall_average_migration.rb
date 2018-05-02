@@ -1,5 +1,5 @@
 class CreateOverallAverages < ActiveRecord::Migration[5.1]
-  def up
+  def self.change
     create_table :overall_averages do |t|
       t.belongs_to :rateable, :polymorphic => true
       t.float :overall_avg, :null => false
@@ -7,9 +7,5 @@ class CreateOverallAverages < ActiveRecord::Migration[5.1]
     end
 
     add_index :overall_averages, [:rateable_id, :rateable_type]
-  end
-
-  def down
-    drop_table :overall_averages
   end
 end
